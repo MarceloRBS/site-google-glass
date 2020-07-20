@@ -2,11 +2,11 @@
 /* Usando fontes externas */
 @font-face {
     font-family: 'FonteLogo';
-    src: url("/_fonts/Rajdhani-Regular.ttf");
+    src: url("../_fonts/Rajdhani-Regular.ttf");
 }
 @font-face {
     font-family: 'Moderno';
-    src: url("/_fonts/MuseoModerno-VariableFont_wght.ttf")
+    src: url("../_fonts/MuseoModerno-VariableFont_wght.ttf")
 }
 
 body {
@@ -46,7 +46,7 @@ header#cabecalho img#icone {
 header#cabecalho {
     border-bottom: 1px #606060 solid; /* Linha de borda inferior */
     height: 150px;
-    background: url("/_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /* Pode acontecer de uma 
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /* Pode acontecer de uma 
     imagem se repetir para conseguir preencher os espaços vazios. Para evitar isso usa-se o parâmetro 'no-repeat' */
 }
 
