@@ -1,0 +1,268 @@
+@charset "UTF-8";
+/* Usando fontes externas */
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("/_fonts/Rajdhani-Regular.ttf");
+}
+@font-face {
+    font-family: 'Moderno';
+    src: url("/_fonts/MuseoModerno-VariableFont_wght.ttf")
+}
+
+body {
+    font-family: Moderno;
+    background-color: rgb(216, 216, 216); /* Cor de fundo */
+    color: black; /* Cor das letras */
+}
+
+div#interface {
+    width: 1150px; /* Largura */
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+p {
+    text-align: justify; /* Alinhamento do texto: justificado */
+    text-indent: 50px; /* Indentação */
+}
+
+a {
+    text-decoration: none;
+    color: #888888;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1080px;
+    top: 70px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid; /* Linha de borda inferior */
+    height: 150px;
+    background: url("/_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /* Pode acontecer de uma 
+    imagem se repetir para conseguir preencher os espaços vazios. Para evitar isso usa-se o parâmetro 'no-repeat' */
+}
+
+header#cabecalho h1 {
+    font-family: FonteLogo; /* Fonte */
+    font-size: 30pt; /* Tamanho da fonte */
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); /* Primeiro pixel é de deslocamento, o segundo é de deslocamento vertical e o terceiro é de espalhamento */
+    padding: 0px;
+    margin-bottom: 0px;
+
+}
+
+header#cabecalho h2 {
+    font-family: Moderno;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
+}
+/* Formatação de imagens com legendas */
+
+/* Sempre que se utilizar o parâmeto 'class' você vai colocar o nome da tag, um ponto e o nome da classe */
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute; /* Essa configuração permite que a legenda se mova para qualquer lugar do site */
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 98%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/* Formataçã do Menu */
+
+/* Sempre que tivemos ID usamos a cerquilha (#) */
+
+nav#menu {
+    display: block;
+
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 350px;
+}
+
+nav#menu li {
+    display: inline-block; /* Faz com que tudo seja exibido na mesma linha */
+    background-color: rgb(187, 187, 187);
+    padding: 10px; /* Esse parâmetro controla o tamanho do preenchimento */
+    margin: 2px; /* Esse parâmentro controla o espaço fora do preenchimento */
+    transition: 1s;
+    border-radius: 2px;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
+}
+
+section#corpo {
+    display: block;
+    width: 670px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+article#noticia-principal h2 {
+    color: #ffffff;
+    background-color: #888888;
+    font-size: 20px;
+    padding: 5px 0px 5px 10px;
+    margin: 1px 1px 1px 1px;
+    border-radius: 2px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: FonteLogo;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13px;
+    color: #888888;
+    background-color: #ffffff;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 12px;
+    color: black;
+}
+.direita {
+    text-align: right;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top; /* Alinhamento vertical - ao topo */
+    text-align: center;
+}
+
+table#tabelaspec td.cd {
+    color: black;
+    background-color: #cecece;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+}
+
+table caption span {
+    display: block;
+    font-size: 10px;
+    text-align: right;
+}
+
+aside#lateral {
+    display: block;
+    width: 450px;
+    float: right;
+    background-color: #cecece;
+    margin-top: 15px;
+    padding: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+aside#lateral h1 {
+    font-family: FonteLogo;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    color: #ffffff;
+    background-color: #888888;
+    padding-left: 10px;
+    border-radius: 2px;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+    text-align: center;
+}
+
+video#filme1 {
+    display: block;
+    position: relative;
+    left: 15px;
+    outline: none;
+    width: 650px;
+}
+
+video#filme2 {
+    display: block;
+    position: relative;
+    left: 4px;
+    outline: none;
+    width: 440px;
+}
